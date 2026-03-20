@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>LEAVE</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="sidebar">...</div>
+
+<div class="main">
+
+<div class="glass">
+<h2>Apply Leave</h2>
+<form action="/apply_leave" method="POST">
+<input name="name">
+<input name="reason">
+<button>Apply</button>
+</form>
+</div>
+
+<div class="glass">
+<h2>Leave Requests</h2>
+
+{% for l in leaves %}
+<p>{{l.employee_name}} - {{l.reason}} - {{l.status}}
+<a href="/approve_leave/{{l.id}}">Approve</a>
+</p>
+{% endfor %}
+
+</div>
+
+</div>    
+</body>
+</html>
