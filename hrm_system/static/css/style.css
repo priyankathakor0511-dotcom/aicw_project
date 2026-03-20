@@ -1,0 +1,93 @@
+body {
+    margin:0;
+    background: linear-gradient(135deg,#d8a8d1,#764ba2);
+    color:white;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background: url('/static/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+
+}
+/* Sidebar */
+.sidebar {
+    position:fixed;
+    width:220px;
+    height:100%;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    padding:20px;
+}
+
+.sidebar a {
+    display:block;
+    color:white;
+    margin:10px 0;
+    text-decoration:none;
+}
+
+/* Main */
+.main {
+    margin-left:240px;
+    padding:20px;
+}
+
+/* Glass card */
+.glass {
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    padding:20px;
+    border-radius:15px;
+    margin:20px 0;
+}
+
+/* Inputs */
+input, select {
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+}
+
+/* Button */
+button {
+    background:#1ed87e;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    color:rgb(152, 52, 52);
+}
+.logout-box {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: white;
+    width: 300px;
+}
+
+/* Heading */
+.logout-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+   padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Logout button */
+.btn-logout {
+    background: red;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
